@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Satya | Backend Developer</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="mediaqueries.css" /> -->
+</head>
+
+<body>
+    <nav id="desktop-nav" class="sticky-top">
+        <a class="logo" href="#">SATYA</a>
+        <div class="nav-items">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">QA Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">satya</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">QA Experience</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__text">
+            <h1 class="section__text__p1">Hello, I'm</h1>
+            <h1 class="title">Satya Madhavi Gangadharabhatla</h1>
+            <br>
+            <h1 class="section__text__p2">Aspiring Backend Developer.</h1>
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="window.open('./assets/satya-resume.pdf')">
+                    Download Resume
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+                    onclick="location.href='https://linkedin.com/in/satyamadhavig'" />
+                <img src="./assets/github.png" alt="My Github profile" class="icon"
+                    onclick="location.href='https://github.com/satyamadhavi1993'" />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h2 class="title">About Me</h2>
+        <div class="profile-container">
+            <div class="about">
+                <div class="about-section">
+                    <p>
+                        Aspiring Software Developer with over 6 years of experience in QA Automation, where I honed my skills in 
+                        problem-solving, testing, and ensuring product quality. Recently, I have transitioned to web development, 
+                        acquiring knowledge in Python and Django. I'm passionate about building efficient, scalable web applications 
+                        and eager to apply my skills in a real-world environment.
+                    </p>
+                    <p>
+                        I am a self-motivated learner who thrives in collaborative environments, and I am excited to contribute to 
+                        innovative projects as I continue to grow as a developer. I am particularly interested in backend development 
+                        and enjoy the challenges of creating robust, data-driven applications.
+                    </p>
+                </div>
+                <div class="education-section">
+                    <h2>Education</h2>
+                    <p>Bachelor of Technology in Electronics and Communications</p>
+                </div>
+            </div>
+            <div class="profile-picture">
+                <div class="picture-container">
+                    <img src="assets/profile-pic.jpg" alt="Profile Picture">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h2 class="title">Skills</h2>
+        <div class="skills-section">
+            <ul class="skills-list">
+                <li class="skill-item">
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/python--v1.png" alt="Python"/>
+                    Python
+                </li>
+                <li class="skill-item">
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/java-coffee-cup-logo.png" alt="Java"/>
+                    Java
+                </li>
+                <li class="skill-item">
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/django.png" alt="Django"/>
+                    Django
+                </li>
+                <li class="skill-item">
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/javascript.png" alt="JavaScript"/>
+                    JavaScript
+                </li>
+                <li class="skill-item">
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/html-5.png" alt="HTML5"/>
+                    HTML5
+                </li>
+                <li class="skill-item">
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/css3.png" alt="CSS3"/>
+                    CSS3
+                </li>
+                <li class="skill-item">
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/sql.png" alt="SQL"/>
+                    SQL
+                </li>
+                <li class="skill-item">
+                    <img width="50" height="50" src="https://img.icons8.com/stickers/50/selenium-test-automation.png" alt="selenium-test-automation"/>
+                    Selenium
+                </li>
+            </ul>
+        </div>
+        <h2 class="sub-title">Certifications</h2>
+        <div class="certifications-section">
+            <ul class="certifications-grid">
+                <li class="certification-card">
+                    <img src="https://img.icons8.com/color/48/certificate.png" alt="Certification"/>
+                    <div class="certification-details">
+                        <span class="certification-title">CS50P: CS50's Introduction to Programming with Python</span><br>
+                        Issued By: Harvard University
+                    </div>
+                </li>
+                <li class="certification-card">
+                    <img src="https://img.icons8.com/color/48/certificate.png" alt="Certification"/>
+                    <div class="certification-details">
+                        <span class="certification-title">Django for Everybody</span><br>
+                        Issued By: University of Michigan
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="title">Projects</h2>
+        <div class="project-container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="assets/project.png" />
+                    </div>
+                    <div class="project-info">
+                        <h3>Market Link</h3>
+                        <p>
+                            MarketLink is a simple web application designed to connect local sellers with potential buyers. 
+                            It allows users to post items for sale and browse listings. 
+                            <br>
+                            The project was built using Django and Bootstrap.
+                        </p>
+                        <a class="project-link" href="https://satyamadhavi.pythonanywhere.com/" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <h2 class="title">QA Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">April 2022 – June 2023</div>
+                <i class="fa-solid fa-location-dot timeline-icon" style="color: #ed4e04;"></i>
+                <div class="timeline-content">
+                    <h3 class="timeline-employer">Tech Mahindra, India</h3>
+                    <h4 class="timeline-job-title">Senior Software Engineer</h4>
+                    <p class="timeline-description">
+                        Developed and maintained test scripts using Selenium with Java and Python. Performed API testing with Rest Assured Framework.
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">November 2019 – April 2022</div>
+                <i class="fa-solid fa-location-dot timeline-icon" style="color: #ed4e04;"></i>
+                <div class="timeline-content">
+                    <h3 class="timeline-employer">Maveric Systems, India</h3>
+                    <h4 class="timeline-job-title">Senior Test Engineer</h4>
+                    <p class="timeline-description">
+                        Led sub-projects and developed automated test scripts using Selenium and Cucumber.
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">December 2016 – November 2019</div>
+                <i class="fa-solid fa-location-dot timeline-icon" style="color: #ed4e04;"></i>
+                <div class="timeline-content">
+                    <h3 class="timeline-employer">Excers Technologies, India</h3>
+                    <h4 class="timeline-job-title">Test Engineer</h4>
+                    <p class="timeline-description">
+                        Developed and maintained test scripts for P2P Loan Management System using Selenium and TestNG.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+    <section id="contact">
+            <h2 class="title">Contact Me</h2>
+            <div class="contact-details">
+                <div class="contact-item">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+                  <a href="mailto:satyamadhavi1993@gmail.com">satyamadhavi1993@gmail.com</a>
+                </div>
+                <div class="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon contact"
+                    onclick="location.href='https://linkedin.com/in/satyamadhavig'" />
+                <img src="./assets/github.png" alt="My Github profile" class="icon contact"
+                    onclick="location.href='https://github.com/satyamadhavi1993'" />
+                </div>
+              </div>
+              <div id="top-arrow">
+                <span id="to-top">
+                  <a href="#top">
+                    <i class="fa fa-chevron-up"></i>
+                  </a>
+                </span>
+              </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
